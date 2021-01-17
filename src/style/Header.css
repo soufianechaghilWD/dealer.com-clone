@@ -166,3 +166,64 @@
   font-weight: 600;
   font-size: 13px !important;
 }
+/* Styling the Phone version */
+
+.header__content__ph {
+  display: none;
+  padding: 10px 25px;
+  background-color: black;
+}
+.header__content__ph > img {
+  object-fit: contain;
+  width: 35%;
+}
+.header__content__ph > i {
+  font-size: 25px;
+  display: block;
+  margin: auto 0;
+}
+.header__modelPh {
+  color: white;
+  width: 100%;
+}
+.header__ph__content {
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  width: 100%;
+}
+.header__modelPh {
+  background-color: black;
+  width: 100% !important;
+}
+.header__ph__bu {
+  background-color: transparent;
+}
+.header__ph__bu > button {
+  display: block;
+  margin-left: auto;
+  margin-right: 40px;
+  color: white;
+  background-color: #e98800;
+  font-size: 17px;
+  font-weight: 700;
+  border: 1px solid #e98800;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 8px 40px;
+}
+@media (max-width: 990px) {
+  .header {
+    background-color: transparent;
+    border: none;
+  }
+  .header__content__pc {
+    display: none;
+  }
+  .header__content__ph {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    border: none;
+  }
+}

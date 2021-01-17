@@ -12,6 +12,9 @@ function Header() {
     const [abouCont, setAbouCont] = useState(false)
     const [search, setSearch] = useState(false)
     const [height, setHeight] = useState(49)
+    const [model, setModel] = useState(false)
+
+
 
     useEffect(() => {
         var x = document.getElementById('search')
@@ -106,6 +109,26 @@ function Header() {
                         <p>Corporate Responsibility</p>
                         <p>Corporate Information</p>
                         <p>Contact Us</p>
+                    </div>
+                }
+                
+                <div className="header__content__ph">
+                    <img src={Logo} alt="" />
+                    <i className="fa fa-bars" onClick={e => setModel(!model)} ></i>
+
+                </div>
+                {
+                    model && 
+                    <div className="header__ph__content">
+                        <div className="header__modelPh">
+                            <div>
+                                <input type="text" placeholder="Search..."/>
+                                <i className="fa fa-search" style={{paddingRight: 10}}></i>
+                            </div>
+                        </div> 
+                        <div className="header__ph__bu">
+                            <button>BOOK A DEMO</button>
+                        </div>
                     </div>
                 }
                 

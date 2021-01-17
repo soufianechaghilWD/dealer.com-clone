@@ -6,6 +6,9 @@ function Section1() {
         <div className="section1">
             <div className="section1__content">
                 <button>BOOK A DEMO</button>
+                <div>
+                    <h2>Contenu de partie</h2>
+                </div>
             </div>
         </div>
     )

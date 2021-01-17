@@ -24,3 +24,14 @@
   position: relative;
   z-index: 10;
 }
+
+@media (max-width: 990px) {
+  .section1 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto 600px;
+  }
+  .section1__content > button {
+    position: unset;
+  }
+}
