@@ -13,14 +13,14 @@ function Header() {
     const [search, setSearch] = useState(false)
     const [height, setHeight] = useState(49)
     const [model, setModel] = useState(false)
-
-
+    const [solPh, setSolPh] = useState(false)
+    const [resPh, setResPh] = useState(false)
+    const [aboPh, setAboPh] = useState(false)
 
     useEffect(() => {
         var x = document.getElementById('search')
         setHeight(x?.offsetHeight)
     }, [])
-
 
 
     return (
@@ -111,11 +111,15 @@ function Header() {
                         <p>Contact Us</p>
                     </div>
                 }
+                {/* Header for the phone */}
                 
                 <div className="header__content__ph">
                     <img src={Logo} alt="" />
-                    <i className="fa fa-bars" onClick={e => setModel(!model)} ></i>
+                    {model === false ? <i className="fa fa-bars" onClick={e => setModel(!model)} ></i> : <i onClick={e => setModel(!model)} className="fa fa-close"style={{paddingRight: 10}}></i>}
 
+                </div>
+                <div>
+                    
                 </div>
                 {
                     model && 
@@ -123,8 +127,40 @@ function Header() {
                         <div className="header__modelPh">
                             <div>
                                 <input type="text" placeholder="Search..."/>
-                                <i className="fa fa-search" style={{paddingRight: 10}}></i>
+                                <i className="fa fa-search" style={{paddingRight: 10, color: 'gray'}}></i>
                             </div>
+                            <p onClick={e => setSolPh(!solPh)} className={solPh && 'add__red'}>Solutions <i className= {solPh ? "fa fa-chevron-up" : "fa fa-chevron-down"} ></i></p>
+                            {
+                                solPh && <div className="solutions__phone">
+                                    <p>Websites</p>
+                                    <p>Managed Services</p>
+                                    <p>Advertising</p>
+                                    <p>Integrated Partner Program</p>
+                                    <p>OEM Partners</p>
+                                    <p>Analytics</p>
+                                </div>
+                            }
+                            <p onClick={e => setResPh(!resPh)} className={resPh && 'add__red'}>Resources <i className= {resPh ? "fa fa-chevron-up" : "fa fa-chevron-down"} ></i></p>
+                            {
+                                resPh && <div className="solutions__phone">
+                                    <p>Resource Library</p>
+                                    <p>Blog</p>
+                                    <p>Client Resources</p>
+                                </div>
+                            }
+                            <p>Success Stories</p>
+                            <p onClick={e => setAboPh(!aboPh)} className={aboPh && 'add__red'}>About Us <i className= {aboPh ? "fa fa-chevron-up" : "fa fa-chevron-down"} ></i></p>
+                            {
+                                aboPh && <div className="solutions__phone">
+                                    <p>Careers</p>
+                                    <p>News</p>
+                                    <p>Corporate Responsibility</p>
+                                    <p>Corporate Information</p>
+                                    <p>Contact Us</p>
+                                </div>
+                            }
+                            <p>Support</p>
+                            <p>Login</p>
                         </div> 
                         <div className="header__ph__bu">
                             <button>BOOK A DEMO</button>
