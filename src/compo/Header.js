@@ -22,9 +22,20 @@ function Header() {
         setHeight(x?.offsetHeight)
     }, [])
 
+    window.onscroll = function() {myFunction()};
 
+    var header = document.getElementById("myHeader");
+    var sticky = header?.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header?.classList.add("sticky");
+      } else {
+        header?.classList.remove("sticky");
+      }
+    }
     return (
-        <div className="header">
+        <div className="header" id="myHeader">
             <div className="header__content">
                 {/* The PC Header */}
                 <div className="header__content__pc">

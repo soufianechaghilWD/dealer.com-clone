@@ -1,14 +1,21 @@
 .section1 {
-  background: url("../files/sec1.jpg");
   background-size: 100%;
   min-height: 600px;
+  max-height: 700px;
+  background-image:
+  linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0) , rgba(0, 0, 0, 0.7),  rgba(245, 246, 252, 0), rgba(245, 246, 252, 0),  rgba(245, 246, 252, 0) ),
+  url("../files/sec1.jpg");
 }
 .section1__content {
   max-width: 1440px;
   display: block;
   margin: 0 auto;
 }
-
+.section1__content > p {
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgb(190, 189, 189);
+}
 .section1__content > button {
   display: block;
   margin-left: auto;
@@ -22,16 +29,74 @@
   border-bottom-right-radius: 5px;
   padding: 8px 40px;
   position: relative;
-  z-index: 10;
+  z-index: 10; 
 }
-
+.section1__con{
+  display: flex;
+  justify-content: space-evenly;
+}
+.section1__con > img{
+  object-fit: contain;
+  width: 40%;
+}
+.section1__conLeft{
+  padding: 100px 0 0 70px;
+  color: white;
+}
+.section1__conLeft > h1{
+  font-family: 'Oswald', arial;
+  line-height: 0.9em;
+  font-size: 50px;
+}
+.section1__conLeft > img{
+  object-fit: contain;
+  width: 75%;
+  margin: 30px 0 20px;
+}
+.section1__conLeft > h3{
+  line-height: 1em;
+  font-size: 25px;
+}
+.section1__conLeft > button{
+  margin-top: 45px;
+  background-color: #e98800;
+  font-size: 17px;
+  color: white;
+  border-radius: 3px;
+  font-weight: 700;
+  border: 1px solid #e98800;
+  padding: 8px 20px;
+  cursor: pointer;
+}
 @media (max-width: 990px) {
+  .section1__content > p {
+    padding: 0 8px 15px 8px;
+    font-size: 13px;
+  }
   .section1 {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: auto 600px;
+    background-size: auto 700px;
+  }
+  .section1__con{
+    display: flex;
+    flex-direction: column;
+  }
+  .section1__conLeft{
+    padding: 10px 0 0 10px;
+    color: white;
+  }
+  .section1__con > img{
+    object-fit: contain;
+    flex: 1;
+  }
+  .section1__conLeft > img{
+    object-fit: contain;
+    width: 100%;
+    margin: 30px 0 20px;
   }
   .section1__content > button {
     position: unset;
   }
+
 }

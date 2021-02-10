@@ -1,0 +1,26 @@
+.section2{
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+.section2__con{
+    display: flex;
+    justify-content: center;
+    max-width: 33%;
+    margin: 0 auto;
+    height: auto;
+}
+.section2__con > img{
+    object-fit: contain;
+    width: 25%;
+}
+.section2__con > p {
+    font-weight: 700;
+    padding-top: 3%;
+}
+@media (max-width: 990px){
+    .section2__con{
+        max-width: 100%;
+        padding-right: 10px;
+    }
+}
