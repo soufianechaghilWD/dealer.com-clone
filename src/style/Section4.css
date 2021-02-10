@@ -1,0 +1,50 @@
+.section4{
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+.section4 > h1{
+    font-family: 'Oswald', arial;
+    font-size: 75px; 
+    padding-left: 25px;
+}
+.section4 > p {
+    padding-left: 95px;
+}
+.section4__SEO{
+    display: flex;
+    margin: 35px 75px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.section4__SEO__pic{
+    width: 590px;
+    height: 515px;
+    background-image: url("../files/sec4__1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section4__SEO__left{
+    position: relative;
+}
+.section4__SEO__left > h2{
+    color: #e98800;
+    padding: 45px 0 25px;
+}
+.section4__SEO__left > h3{
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 0.9em;
+}
+.section4__SEO__left > p {
+    font-size: 17px;
+    line-height: 1.8em;
+}
+.section4__SEO__left > span{
+    position: absolute;
+    bottom: 15px;
+    font-size: x-small;
+    color: rgb(163, 160, 160);
+}
