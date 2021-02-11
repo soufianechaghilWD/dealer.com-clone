@@ -1,0 +1,47 @@
+.section5{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 50px 190px 50px 220px;
+}
+.section5__sol{
+    text-align: center;
+}
+.section5__sol > h1{
+    font-family: 'Oswald', arial;
+    font-size: 55px;
+    padding-bottom: 50px;
+    cursor: pointer;
+}
+.section5__sol > p {
+    padding-bottom: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none; 
+    padding: 15px 0px;
+    position: relative;
+}
+.section5__sol > p:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #e98800;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .section5__sol > p:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+@media (max-width : 990px){
+    .section5{
+        display: block;
+        padding: 20px;
+    }
+
+}

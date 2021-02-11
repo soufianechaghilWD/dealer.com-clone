@@ -1,0 +1,45 @@
+.section7{
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+    padding: 100px 0 0 75px;
+}
+.section7 > h1{
+    text-align: center;
+    font-family: 'Oswald', arial;
+    font-size: 45px;
+    padding-bottom: 40px;
+}
+.section7 > p {
+    color: #212121;
+    line-height: 1.8em;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+}
+.section7 > p:last-of-type{
+    margin-bottom: 65px;
+}
+.section7 > button{
+    color: white;
+    background-color: #e98800;
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid #e98800;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-bottom: -10px;
+} 
+@media (max-width: 990px){
+    .section7{
+        padding: 25px;
+    }
+    .section7 > h1{
+        font-size: 35px;
+    }
+    .section7 > button{
+        display: none;
+    } 
+
+}

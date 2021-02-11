@@ -16,8 +16,11 @@
     margin: 35px 75px;
     justify-content: space-evenly;
     cursor: pointer;
+    transition: transform 450ms;
 }
-
+.section4__SEO:hover{
+    transform: scale(0.96, 1);
+}
 .section4__SEO__pic{
     width: 590px;
     height: 515px;
@@ -47,4 +50,103 @@
     bottom: 15px;
     font-size: x-small;
     color: rgb(163, 160, 160);
+}
+.section4__row{
+    display: flex;
+    padding: 10px 40px;
+}
+.section4__col{
+    cursor: pointer;
+    width: 100%;
+    transition: transform 450ms;
+}
+.section4__col:hover{
+    transform: scale(0.95);
+}
+.section4__col > img{
+    object-fit: contain;
+    width: 100%;
+    max-height: 280px;
+}
+.section4__col > h2{
+    color: #e98800;
+    padding: 45px 0 20px 100px;
+}
+.section4__col > h3{
+    padding: 0px 40px 25px 100px;
+    font-size: 24px;
+    line-clamp: 2;
+    font-weight: 700;
+    line-height: 0.9em;
+}
+.section4__col > span{
+    font-size: x-small;
+    color: rgb(182, 179, 179);
+}
+.section4__col > p{
+    margin-top: 15px;
+    font-weight: 500;
+    line-clamp: 4;
+}
+.section4__col > p, .section4__col > span{
+    padding: 0px 40px 0px 100px;
+}
+.section4 > button{
+    display: block;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 50px;
+    color: white;
+    background-color: #e98800;
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid #e98800;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+@media (max-width : 990px){
+    .section4__SEO{
+        flex-direction: column;
+    }
+    .section4__SEO__pic{
+        width: 100%;
+        height: 320px;
+    }
+    .section4__SEO{
+        margin: 15px 20px;
+    }
+    .section4__SEO__left{
+        padding-bottom: 25px;
+        flex: 1;
+        order: 2;
+    }
+    .section4__SEO__left > span{
+        bottom: 6px;
+    }
+    .section4 > p {
+        padding: 0px 20px;
+        text-align: center;
+    }
+    .section4__row{
+        flex-direction: column;
+        padding: 10px ;
+    }
+    .section4__col > h2{
+        padding: 25px 0 20px 20px;
+    }
+    .section4__col > h3{
+        padding: 0px 10px 10px 20px;
+        font-weight: 700;
+        line-height: 0.9em;
+    }
+    .section4__col > p{
+        margin-bottom: 15px;
+    }
+    .section4__col > p, .section4__col > span{
+        padding: 0px 40px 0px 20px;
+    }
+    .section4 > button{
+        display: block;
+        margin: 0 auto;
+    }
 }

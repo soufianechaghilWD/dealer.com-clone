@@ -1,0 +1,43 @@
+.section9 {
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+    padding: 75px;
+    text-align: center;
+}
+.section9 > h1{
+    font-family: 'Oswald', arial;
+    font-size: 45px;
+}
+.section9 > p {
+    display: flex;
+    flex-direction: column;
+    color: #212121;
+    line-height: 1.8em;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 30px;
+}
+.section9 > button{
+    color: white;
+    background-color: #e98800;
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid #e98800;
+    border-radius: 5px;
+    padding: 7px 75px;
+    cursor: pointer;
+}
+@media (max-width : 990px){
+    .section9 > button{
+        color: white;
+        background-color: #e98800;
+        font-size: 15px;
+        font-weight: 700;
+        border: 1px solid #e98800;
+        border-radius: 5px;
+        padding: 7px 25px;
+        cursor: pointer;
+    }
+}
